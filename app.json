@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/AvinashReddy3108/PaperplaneExtended",
+  "repository": "https://github.com/w3b573r/websterbot",
   "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-07-24",
-  "success_url": "https://t.me/PaperplaneExtended",
+  "success_url": "https://t.me/W3B5T3R",
   "stack": "container",
   "env": {
     "API_KEY": {
