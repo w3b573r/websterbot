@@ -1,7 +1,3 @@
-RUN apt-get update -y
-RUN apt install python2.7 python-pip
-RUN apt-get install -y python-dev
-
 # We're using Alpine Edge
 FROM alpine:edge
 
@@ -45,6 +41,7 @@ RUN apk add --no-cache --update \
     pv \
     jq \
     wget \
+    python2 \
     python3 \
     python3-dev \
     readline-dev \
@@ -53,7 +50,8 @@ RUN apk add --no-cache --update \
     sqlite-dev \
     sudo \
     zlib-dev \
-    jpeg-dev 
+    jpeg-dev \
+    python2-dev
 
 
 RUN python3 -m ensurepip \
