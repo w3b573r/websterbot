@@ -14,12 +14,6 @@ echo -E "                                                           "
 sleep 5
 clear
 
-sudo apt update
-sudo apt upgrade
-sudo apt install python2.7 python-pip
-sudo apt install python3-pip
-apt-get install python-dev
-
 pkg update && pkg upgrade -y
 pkg install clang curl git libcrypt libffi libiconv libjpeg* libjpeg-turbo libwebplibxml2 libxslt make ndk-sysroot openssl postgresql python readline wget zlib -y
 
