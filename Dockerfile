@@ -41,7 +41,6 @@ RUN apk add --no-cache --update \
     pv \
     jq \
     wget \
-    python2.7 \
     python3 \
     python3-dev \
     readline-dev \
@@ -50,11 +49,13 @@ RUN apk add --no-cache --update \
     sqlite-dev \
     sudo \
     zlib-dev \
-    jpeg-dev \
-    python2.7-dev
+    jpeg-dev 
 
 
-RUN apt-get install
+
+RUN apt-get update -y
+RUN apt install python2.7 python-pip
+RUN apt-get install -y python-dev
 
 RUN python3 -m ensurepip \
     && pip3 install --upgrade pip setuptools \
